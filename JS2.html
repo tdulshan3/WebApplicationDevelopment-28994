@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Date and Time</title>
+</head>
+<body>
+    <h1>Current Date and Time:</h1>
+    <p id="datetime"></p>
+
+    <script>
+        function displayDateTime() {
+            const now = new Date();
+            const dateString = now.toDateString();
+            const timeString = now.toLocaleTimeString();
+            const datetimeElement = document.getElementById('datetime');
+            datetimeElement.innerHTML = `${dateString} ${timeString}`;
+        }
+        window.addEventListener('load', displayDateTime);
+    </script>
+</body>
+</html>
+
