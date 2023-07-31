@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Tute 07
+        </title>
+    </head>
+    <body>
+        <button name="bt0" value="Button" onclick="onClick();"><h5>Button</h5></button>
+        <br>
+        <br>
+        
+        <script>
+            function onClick(){
+                window.alert("This is alert");
+            }
+            total=0;
+            for (let i=0; i<5; i++){
+                x=parseInt(prompt("Enter mark "+(i+1)+":"));
+                total=total+x;
+            }
+            var avg=0;
+            avg=total/5;
+            document.write("Sum is :"+total+"<br>Average is :"+avg);
+            function grade (avg){
+                if(avg>30) {
+                    window.alert("Congratulatoins you passed !");
+                }
+                else  {
+                    window.alert("Better Luck next time");
+                }
+            }
+        </script>
+        <br>
+         <button name="bt1" value="Grade" onclick="grade(avg);" ><h5>Grade</h5></button>
+    </body>
+</html>
