@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        no1=parseFloat(window.prompt("Enter number 01: "));
+        no2=parseFloat(window.prompt("Enter number 02: "));
+        op=window.prompt("Enter operation: ");
+        switch(op){
+            case "+" : document.write("Sum is: "+(no1+no2));
+            break;
+            case "-" : document.write("Sub is: "+(no1-no2));
+            break;
+            case "*" : document.write("Mult is: "+(no1*no2));
+            break;
+            case "/" : document.write("Div is: "+(no1/no2));
+            break;
+            default : document.write("Invalid");
+            break;
+        }
+    </script>
+</body>
+</html>
