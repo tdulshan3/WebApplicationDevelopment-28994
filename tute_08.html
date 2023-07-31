@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button name="btR" value="RED" onmouseover="col('red')" onmouseout="def()">RED</button>
+    <br>
+    <br>
+    <button name="btG" value="GREEN" onmouseover="col('green')" onmouseout="def()">GREEN</button>
+    <br>
+    <br>
+    <button name="btB" value="BLUE" onmouseover="col('blue')" onmouseout="def()" >BLUE</button>
+    <br>
+    <br>
+    <script>
+        function col(c){
+            document.body.style.backgroundColor=c;   
+        }
+        function def()
+        {
+            document.body.style.backgroundColor="";
+        }
+        rad=parseFloat(window.prompt("Enter Radious: "));
+        document.write("Area is :"+(Math.PI*rad*rad));
+    </script>
+    
+</body>
+</html>
